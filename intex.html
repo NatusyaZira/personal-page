@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylex/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
@@ -12,37 +13,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal page</title>
+    <title>Personal</title>
 </head>
 <body>
-    <!--Navigation bar-->
-    <nav class="navbar">
+    <div class="container">
+    <nav>
         <ul>
-            <li>
-                <a class="nav__item" href="#about">About Me</a>
-            </li>
-            <li>
-                <a class="nav__item" href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a class="nav__item" href="#skills">Skills</a>
-            </li>
-            <li>
-                <a class="nav__item" href="#contacts">Contacts</a>
-            </li>
-            <li>
-                <a class="nav__item nav__button" href="#">Download CV</a>
-            </li>
+            <li></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li class="button" style="color: #fff;"><a href="#">Download CV</a></li>
         </ul>
     </nav>
     <header>
-        <div class="head__text">
-            <h1>Nataliia Kovalova</h1>
-            <p>Front-end developer</p>
-        </div>
-        <div class="head__img">
-            <div class="img"></div>
+        <div class="head__container">
+            <div class="head__text">
+                <h1>Nataliia Kovalova</h1>
+                <p>Front end Developer</p>
+            </div>
+            <div class="head__visual">
+                <div class="head__img">
+                    <div class="head__gradient"></div>
+                </div>
+            </div>
         </div>
     </header>
     <aside class="info-cards">
@@ -51,31 +45,34 @@
         <div class="card"><span class="num">3+ </span><br>Personal <br>Projects</div>
         <div class="card"><span class="num">4</span><br>Completed <br>Courses</div>
     </aside>
-    <main id="about">
-        <div class="first__box">
-        <h2>About Me</h2>
-            <div class="about__box about__box__1"></div>
-            <div class="about__box about__box__2"></div>
-            <div class="about__box about__box__3"></div> 
-            <p class="about__text">
-                My name is Nataliia. I am a front-end developer beginner. 
-                I have a few projects built in process on studying, based on my knowledge in: 
-                ServiceNow, Bootstrap, HTML, CSS, JavaScript, Redux. Next,js, jQuery, Version control system: GIT, Task management: Redmine, Trello, JIRA.
-            </p>
-            <p class="about__text">
-                Furthermore, I have superficial knowledge in: tailwind css, react, 
-                Express.js, C++ and upper-intermediate level in English. Not only that, but 
-                I am quick teachable, have height communicative skills, also team management experience.      
-            </p>    
-        </div> 
-        <div class="second__box">
-            <div class="secons__box__1"></div>
-            <p class="about__text__2">
-                I am characterized by stress resistance, a high level of self-organization, punctuality, and responsibility, I'm an enthusiastic and detail-oriented
-                Frontend Developer. Looking for opportunity to get my first real experience in working on a project on intern or junior developer position. Moreover, seeking a position with a
-                company to improve my skills in coding, troubleshooting complex problems, and assisting in the timely completion of projects.
-                In the short term, I'm aiming to gain enough skills to qualify for a Middle position. In the next 5 years, I want to acquire the skills that would allow me to teach other people.
-            </p>
+    <main id="about">    
+        <div class="main__container">
+            <h2>About Me</h2>
+                <div class="first__section">
+                    <p>
+                    My name is Nataliia. I am a front-end developer beginner. 
+                    I have a few projects built in process on studying, based on my knowledge in: 
+                    ServiceNow, Bootstrap, HTML, CSS, JavaScript, Redux. Next,js, jQuery, Version control system: GIT, Task management: Redmine, Trello, JIRA.
+                    </p>
+                    <p>
+                    Furthermore, I have superficial knowledge in: tailwind css, react, 
+                    Express.js, C++ and upper-intermediate level in English. Not only that, but 
+                    I am quick teachable, have height communicative skills, also team management experience.      
+                    </p> 
+                </div>
+                <div class="about__images">
+                    <div class="image__1"></div>
+                    <div class="image__2">
+                        <div class="image__3"></div>
+                    </div> 
+                </div> 
+                <div class="image__4"></div>
+                <p class="about__text__2">
+                    I am characterized by stress resistance, a high level of self-organization, punctuality, and responsibility, I'm an enthusiastic and detail-oriented
+                    Frontend Developer. Looking for opportunity to get my first real experience in working on a project on intern or junior developer position. Moreover, seeking a position with a
+                    company to improve my skills in coding, troubleshooting complex problems, and assisting in the timely completion of projects.
+                    In the short term, I'm aiming to gain enough skills to qualify for a Middle position. In the next 5 years, I want to acquire the skills that would allow me to teach other people.
+                </p>
         </div>
     </main>
     <section id="skills" class="skills">
@@ -196,25 +193,25 @@
         </div>
     </div> 
     </section>
-        <section id="contacts" class="contacts">
-            <div class="contact__box">
-                <h2>Contacts</h2>
-                <br>
-                <p><a href="https://mail.google.com/"><img src="images/Email.png" alt="email-logo"width="30px" height="24px">natusya.zira@gmail.com</a></p>
-                <p><a href="www.linkedin.com/in/nataliia-kovalova"><img src="images/LinkedIn.png" alt="LinkedIn-logo" width="30px" height="24px">in/nataliia-kovalova</a></p>
-                <p><a href="https://github.com/NatusyaZira"><img src="images/GitHub.png" alt="GitHub-logo" width="30px" height="24px">github.com/NatusyaZira</a></p>
-            </div>
-            <div class="contact__form">
-                <h2>Drop the line</h2>
-                <br>
-                <form name="texting" action="send.php" mathod="POST">
-                    <input type="text" placeholder="Name" name="name">
-                    <input type="email" placeholder="Email" name="email" required>
-                    <textarea type="text" placeholder="Message" name="message" required></textarea>
-                    <input type="submit" name="Submit" value="Submit">
-                </form>
-            </div>    
-        </section>
-    <footer>2024 &copy Developed by NatusyaZira</footer>
+    <section id="contacts" class="contacts">
+        <div class="contact__box">
+            <h2>Contacts</h2>
+
+            <p><a href="https://mail.google.com/"><img src="./images/Email.png" alt="email-logo"width="30px" height="24px">natusya.zira@gmail.com</a></p>
+            <p><a href="www.linkedin.com/in/nataliia-kovalova"><img src="./images/LinkedIn.png" alt="LinkedIn-logo" width="30px" height="24px">in/nataliia-kovalova</a></p>
+            <p><a href="https://github.com/NatusyaZira"><img src="./images/GitHub.png" alt="GitHub-logo" width="30px" height="24px">github.com/NatusyaZira</a></p>
+        </div>
+        <div class="contact__form">
+            <h2>Drop the line</h2>
+            <form name="texting" action="send.php" mathod="POST">
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea type="text" placeholder="Message" name="message" required></textarea>
+                <input type="submit" name="Submit" value="Submit">
+            </form>
+        </div>    
+    </section>
+    <footer><p>2024 &copyDeveloped by NatusyaZira</p></footer>
+    </div>
 </body>
 </html>
