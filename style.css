@@ -92,13 +92,17 @@ header {
     font-size: 36px;
 }
 
+.gap {
+    display: none;
+}
+
 .head__visual {
     display: flex;
     justify-content: end;
 }
 
 .head__img {
-    background-image: url('../images/main-img.png');
+    background-image: url('images/main-img.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -120,9 +124,13 @@ header {
     top: 0.5rem;
 }
 
+.button__resp {
+    display: none;
+}
+
 /* Asid section styling */
 
-.info-cards {
+.info__cards {
     display: flex;
     justify-content: space-between;
     grid-column: 1 / 13;
@@ -136,7 +144,7 @@ header {
     width: 300px;
     height: 200px; /*fixed*/
     font-family: "Rubik", sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 36px;
     color: #578AAF;
     text-align: center;
@@ -184,7 +192,7 @@ main {
 } 
 
 .image__1 {
-    background-image: url(../images/about-1.png);
+    background-image: url(images/about-1.png);
     width: 291px;
     height: 291px;
     background-size: contain;
@@ -193,7 +201,7 @@ main {
 }
 
 .image__2 {
-    background-image: url(../images/about-2.png);
+    background-image: url(images/about-2.png);
     width: 291px;
     height: 291px;
     background-size: contain;
@@ -208,7 +216,7 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    background-image: url(../images/about-3.png);
+    background-image: url(images/about-3.png);
 }
 
 .about__text__2 {
@@ -350,5 +358,93 @@ footer {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
 
+nav {
+    display: none;
+}
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "visual"
+    "title"
+    "button";
+    justify-content: start;
+    height: 100vh;
+    align-items: center;
+}
+
+.head__visual {
+    grid-area: visual;
+    grid-row: 1 / 2;
+}
+
+.head__text {
+    grid-area: title;
+    grid-row: 2 / 3;
+}
+
+.button__resp {
+    grid-area: button;
+    grid-row: 4 / 5;
+    display: initial;
+    background-color: #1590EA;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 3rem;
+    align-self:self-end;
+}
+
+.button__resp a {
+    color: #fff;
+}
+
+.head__img {
+    width: 300px;
+    height: 300px;
+    background-position: center center;
+    background-size:cover;
+    background-clip: border-box;
+}
+
+.head__gradient {
+    display: none;
+}
+
+.head__text h1 {
+    font-size: 48px;
+}
+
+.head__text p {
+    font-size: 20px;
+    color: #578AAF;
+}
+
+.gap {
+    display: inline;
+}
+
+.info__cards {
+    display: none;
+}
+main {
+    display: none;
+}
+
+.skills {
+    display: none;
+}
+
+.contacts {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+}
