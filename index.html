@@ -40,12 +40,12 @@
             </div>
         </div>
     </header>
-    <div class="button__resp"><a>Download CV</a></div>
+    <div class="button__resp"><a href="/images/CV_Nataliia_Kovalova-1.png" download>Download CV</a></div>
     <aside class="info__cards">
         <div class="card"><span class="num">01</span><br>Years <br> Experiance</div>
         <div class="card"><span class="num">B2</span><br>English <br>level</div>
         <div class="card"><span class="num">3+ </span><br>Personal <br>Projects</div>
-        <div class="card"><span class="num">4</span><br>Completed <br>Courses</div>
+        <div class="card"><span class="num">8</span><br>Completed <br>Courses</div>
     </aside>
     <main id="about">    
         <div class="main__container">
@@ -204,11 +204,13 @@
             <p><a href="https://github.com/NatusyaZira"><img src="./images/GitHub.png" alt="GitHub-logo" width="30px" height="24px">github.com/NatusyaZira</a></p>
         </div>
         <div class="contact__form">
-            <h2>Reach me</h2>
-            <form name="texting" action="send.php" mathod="POST">
-                <input type="text" placeholder="Name" name="name">
+            <h2>Get in touch</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="01bf4917-55c4-412b-9500-6ca90c398866">
+                <input type="text" placeholder="Your Name" name="name" required>
                 <input type="email" placeholder="Email" name="email" required>
                 <textarea type="text" placeholder="Message" name="message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <input type="submit" name="Submit" value="Submit">
             </form>
         </div>    
